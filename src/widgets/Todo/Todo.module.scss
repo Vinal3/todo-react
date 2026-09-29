@@ -1,0 +1,66 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  width: 100%;
+  max-width: 404px;
+  min-height: 429px;
+  padding: 24px;
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.form {
+  display: flex;
+  column-gap: 16px;
+}
+
+.field {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  font-weight: 600;
+}
+
+.deleteAllButton {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    color: var(--color-gray-4);
+  }
+}
+
+.list,
+.emptyMessage {
+  &:empty {
+    display: none;
+  }
+}
+
+.list {
+  --todoListRowGap: 8px;
+
+  display: grid;
+  row-gap: var(--todoListRowGap);
+}
+
+.emptyMessage {
+  text-align: center;
+  color: var(--color-gray-4);
+}
